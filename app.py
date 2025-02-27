@@ -4,6 +4,12 @@ import plotly.graph_objs as go
 import pandas as pd
 import numpy as np
 import random
+from dash import Dash
+
+app = Dash(__name__)
+server = app.server 
+
+# Rest of your code (callbacks, layouts, etc.)
 from sklearn.linear_model import LogisticRegression
 from statsbombpy import sb
 
